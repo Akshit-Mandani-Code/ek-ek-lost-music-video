@@ -1,44 +1,66 @@
-# Reconstruction Standard — The Repository Must Outlive the Video
+# Reconstruction Standard — From Nothing but This Repository
 
 ## Purpose
-This repository is the durable **text-only reconstruction blueprint** for the music video. It must remain useful if the finished export, editing project, generated media or original AI services are lost.
+This repository must allow a future AI assistant or filmmaker—with no access to this conversation, our current AI platform, our generated images, or any external visual archive—to recreate a closely similar music video from scratch.
 
-A future creator or AI assistant should be able to use this repository together with any recoverable external media assets to rebuild a version as close as reasonably possible to the approved video. The repository itself intentionally contains no media files.
+The repository is intentionally text-only. It must contain the complete creative and technical blueprint, not links to required visual references.
 
-## Strict repository boundary
-This GitHub repository stores text documentation and metadata only. Never commit or upload images, video, audio, rendered frames, thumbnails, DaVinci project binaries, archives or other media assets. Store all media in the separately backed-up external asset archive. GitHub records asset IDs, exact filenames, metadata, checksums and external recovery paths only.
+## Required external input
+The exact song audio master will be supplied separately later, either as an audio file or an accessible download link. Lyrics and manually authored timing markers are documented in the repository, but they do not replace the actual audio. Until the audio is supplied, do not claim that the final duration, musical phrasing or ending cut has been fully verified.
+
+## No external visual dependencies
+A fresh reconstruction must not require:
+- Existing character photographs or face references.
+- Generated character sheets, location images, prop photos or moodboards.
+- Existing video clips, stills, thumbnails or exports.
+- This ChatGPT conversation, prior AI history or platform galleries.
+- Any external archive or private folder.
+
+Current-production media can be useful to us now, but is optional. The written specification is the canonical source for a future from-scratch recreation.
 
 ## What “reconstructable” means
-The documentation must preserve enough information to reproduce the song version, duration and exact edit range; complete narrative and scene order; every shot's duration, timeline position and music relationship; character identity and wardrobe; locations, props, lighting and cinematography; exact prompts and negative constraints; first/last frames; motion and timing; editing decisions; generation tools/settings; and asset recovery paths.
+The documentation must preserve enough detail to recreate:
+- The narrative, emotional progression and scene order.
+- Character appearance, wardrobe, body language and continuity across timelines.
+- Locations, room layouts, props, materials and practical details.
+- Visual style, cinematography, framing, lighting, palette and atmosphere.
+- Every shot's action, composition, duration, music relationship and transition.
+- Model-agnostic image prompts, animation prompts, negative constraints and fallbacks.
+- Editing timeline, cut logic, transitions, color treatment and audio synchronization.
 
-## Reproducibility tiers
-1. **Exact recovery** — original file exists in the external archive or backup; reuse it.
-2. **Reference-guided recreation** — original output is unavailable, but approved external reference images, prompts and settings are preserved.
-3. **Specification-only recreation** — no original media remains; recreate from detailed written specifications.
-4. **Approximation** — a tool cannot reproduce a detail; preserve story function, framing and emotional intent.
+It does not promise pixel-identical results. AI image/video outputs are stochastic and vary by model, version, seed and tool. The target is a close recreation of the story, design language, visual progression, framing, emotional intent, timing and edit.
 
-AI outputs are stochastic. Different tools, models and versions will not produce pixel-identical results. The goal is the closest practical match, not a promise of identical output.
+## Required bootstrap process
+A future AI must begin by generating its own visual references from text:
+1. Read the project, character, environment, prop and style bibles.
+2. Generate a protagonist character sheet using the full written description.
+3. Generate a mother character sheet using the full written description.
+4. Generate location and key prop sheets.
+5. Establish consistent internal references for the session.
+6. Generate the shot stills and animate them from the shot specifications.
+7. If the platform cannot attach/reuse generated references, repeat full identity and continuity descriptions in every relevant prompt and use stable settings/seeds where available.
+
+Do not ask the user for external images to proceed.
 
 ## Required record for every final shot
-Each final shot must have a unique ID and a shot document or complete shot entry containing:
-- Shot ID and status (planned / generated / selected / approved / used in final edit).
+Each final shot must have:
+- Unique shot ID and status.
 - Timeline in/out, duration and source music/lyric marker.
-- Narrative purpose and emotion.
+- Narrative purpose and emotional beat.
 - Location, time, characters, wardrobe and props.
-- Framing, camera angle, lens/look, composition and focus.
-- Lighting, palette, atmosphere and visual effects.
-- Exact master image prompt and model-specific prompt actually used.
-- Exact animation prompt and negative prompt actually used.
-- First-frame, last-frame and approved output asset IDs plus external paths.
-- Tool, model, version/date, settings, aspect ratio, seed if available, reference inputs.
+- Framing, angle, lens/look, composition, camera movement and focus.
+- Lighting, palette, atmosphere and realism constraints.
+- Complete image-generation prompt and negative constraints.
+- Complete image-to-video/text-to-video animation prompt.
+- Start/end visual states and transition instructions.
 - Clip trim, speed, transition and grading notes.
-- Known defects, fixes and fallback approach.
-
-## External media preservation policy
-Store all media outside GitHub in a separately backed-up archive. Keep original files unchanged and use stable asset IDs and filenames. Record exact filenames, archive paths, checksums where practical, dimensions, duration, format and backup status in the text asset register. Never rely on an AI platform gallery, temporary URL or chat attachment as the only copy.
+- Tool/model/settings/seed where known, plus known limitations and fallback.
 
 ## Tool independence
-For every prompt, preserve the model-agnostic creative master prompt, exact prompt submitted to the tool, tool/model/version/settings, reference asset identifiers and input order, and notes describing model deviations or failures.
+Keep a model-agnostic master prompt as the canonical creative instruction. Tool-specific adaptations may be added separately. Record model/version/settings and generation deviations when known, but do not make any single platform mandatory.
+
+## Repository media policy
+Never commit images, video, audio, rendered frames, thumbnails, project files or other binaries. Keep the actual music outside the repository until the user decides how to supply it. The repository may contain a future audio download link or filename as text, but must not depend on any visual media link.
 
 ## Completion gate
-The project is not reconstruction-ready until every final timeline shot is documented, all used media assets are recoverable externally or have recreation instructions, the edit timeline can be rebuilt from the EDL, audio source and final range are identified, continuity references are available externally, and a new person can rebuild the video without undocumented chat history.
+The repository is reconstruction-ready when a new AI can use only its text contents plus the separately supplied exact song audio to generate all required visual references and shots, then rebuild the intended edit without undocumented chat history or external visual assets.
