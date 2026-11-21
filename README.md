@@ -4,15 +4,13 @@ A text-only, tool-independent blueprint for recreating the visual music video fr
 
 ## Start here
 
-1. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — master instructions for a future AI or filmmaker. This is the operational entry point.
+1. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — master instructions for a future AI or filmmaker.
 2. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md) — objective, constraints and reconstruction contract.
 3. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md) — narrative summary.
 4. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md) — approved, provisional and undecided choices.
 5. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md) — current phase and outstanding work.
 
 ## Canonical creative specifications
-
-These files define what the film is. When details overlap, use the decision log for approval status and the relevant specialist bible for the actual specification.
 
 - [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md) — exact supplied lyrics and section labels.
 - [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md) — user-created Audacity timing anchors.
@@ -21,24 +19,28 @@ These files define what the film is. When details overlap, use the decision log 
 - [Hoodie continuity](03_CHARACTERS/PROTAGONIST/HOODIE_CONTINUITY.md) — approved garment and hood states.
 - [Mother character bible](03_CHARACTERS/MOTHER/CHARACTER_BIBLE.md) — canonical written identity and performance.
 - [Locations and props continuity](04_LOCATIONS_AND_PROPS/CONTINUITY_BIBLE.md) — home, bathroom, station and story objects.
-- [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md) — approved sequence and emotional progression.
+- [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md) — approved sequence order and emotional progression.
 
-## Production specifications and tracking
+## AI generation prompts
 
-These files explain how to turn the creative specifications into generated assets and an edited film.
-
-- [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md) — text-first character, environment, still and animation workflow.
+- [Prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md) — tool-independent generation workflow and continuity rules.
+- [Protagonist character sheet prompt](06_AI_PROMPTS/CHARACTER_SHEETS/PROTAGONIST_CHARACTER_SHEET.md) — establish the adult protagonist from text.
+- [Mother character sheet prompt](06_AI_PROMPTS/CHARACTER_SHEETS/MOTHER_CHARACTER_SHEET.md) — establish the mother from text.
+- [Environment reference prompts](06_AI_PROMPTS/REFERENCE_SHEETS/ENVIRONMENT_REFERENCE_SHEETS.md) — bathroom, bedroom/study, station, mother-lap room and props.
+- [Bathroom water-splash prompt](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md) — first existing story still prompt.
 - [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md) — required fields for each individual shot.
-- [Bathroom water-splash prompt](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md) — first existing reference-still prompt; it is a text prompt, not a required image.
+
+## Production and editing
+
 - [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md) — master shot index and status.
-- [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md) — definitive record of the final timeline and edit decisions.
+- [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md) — definitive record of final timeline and edit decisions.
 
 ## Reconstruction requirements
 
 - The **only required input outside this repository** is the exact song audio master, supplied as a file or accessible download link. The audio is not stored here.
-- **No external visual input is required.** A future AI must create its own character sheets, location references and prop references from the written specifications in this repository.
+- **No external visual input is required.** A future AI must create its own character sheets, location references and prop references from the written specifications here.
 - Do not require this conversation, CH3, existing photographs, generated images, video clips, platform galleries or an external media archive.
-- AI outputs are stochastic. Aim to preserve the story, character and environment design, shot progression, emotional intent, timing and edit logic—not pixel-identical results.
+- AI outputs are stochastic. Aim to preserve story, character/environment design, shot progression, emotional intent, timing and edit logic—not pixel-identical results.
 
 ## Repository rules
 
@@ -51,4 +53,4 @@ These files explain how to turn the creative specifications into generated asset
 
 ## Current phase
 
-Pre-production and visual development. The broad story and visual language are established; detailed character, environment, shot and editing specifications still need to be completed.
+Pre-production documentation is prepared for the first visual-reference generation stage. No generated images or videos have yet been approved. The next step is to generate character and environment references, then develop and produce individual shots.
