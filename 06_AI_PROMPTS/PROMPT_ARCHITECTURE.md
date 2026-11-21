@@ -29,8 +29,20 @@ Specify separately:
 ## 5. First-frame / last-frame workflow
 Design both stills with matching camera, lens feel, framing, subject scale and lighting. Change only the intended story state. Use a transition prompt that describes the path between those states, not just the endpoints.
 
+## 6. Reference inputs and fallback
+A prompt must not silently depend on an image that may be unavailable later.
+- Give each important reference a stable asset ID.
+- State which reference images must be attached to the generation tool.
+- If the original image is available, attach it; a filename or asset ID in text is not a substitute for the actual image input.
+- If unavailable, use the relevant written bible and label the generation as specification-only.
+- For identity-critical faces, retrieve/re-upload the approved source image whenever possible. Text descriptions alone cannot guarantee the same face.
+- Record parent/derived relationships when a generated image becomes a reference for another image or video.
+
 ## Master prompt policy
 Keep a model-agnostic master prompt as the source of truth. Store model-specific adaptations in MODEL_SPECIFIC_ADAPTATIONS; never overwrite the master. Record tool, model, settings, aspect ratio, seed (if available), reference assets and output filename for each generation.
+
+## Prompt write-through policy
+Every production-ready prompt written in chat must also be saved in the relevant repository folder during the same working session. Preserve the exact text and assign a prompt ID and version. When revising, retain the history of any prompt already used to generate an asset. Casual brainstorming does not need to be archived until it becomes an actionable production prompt.
 
 ## Production priority
 Generate and approve the three key hoodie reference stills first: bathroom water-splash, hooded faceless protagonist, and mother-lap ending. Do not animate before the stills pass continuity review.
