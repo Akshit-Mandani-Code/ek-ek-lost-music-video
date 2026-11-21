@@ -4,23 +4,25 @@ This repository is the long-term **reconstruction blueprint** for the music vide
 
 ## Start here
 1. [Reconstruction standard](00_PROJECT_OVERVIEW/RECONSTRUCTION_STANDARD.md) — what must be preserved to rebuild the film.
-2. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md)
-3. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md)
-4. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md)
-5. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md)
-6. [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md)
-7. [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md)
-8. [Visual style bible](02_VISUAL_DIRECTION/VISUAL_STYLE_BIBLE.md)
-9. [Protagonist character bible](03_CHARACTERS/PROTAGONIST/CHARACTER_BIBLE.md)
-10. [Hoodie continuity](03_CHARACTERS/PROTAGONIST/HOODIE_CONTINUITY.md)
-11. [Mother character bible](03_CHARACTERS/MOTHER/CHARACTER_BIBLE.md)
-12. [Locations and props continuity](04_LOCATIONS_AND_PROPS/CONTINUITY_BIBLE.md)
-13. [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md)
-14. [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md)
-15. [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md)
-16. [Asset register](07_PRODUCTION/ASSET_REGISTER.md)
-17. [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md)
-18. [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md)
+2. [Working protocol](00_PROJECT_OVERVIEW/WORKING_PROTOCOL.md) — chat/GitHub rules, prompt archiving and missing-reference handling.
+3. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md)
+4. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md)
+5. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md)
+6. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md)
+7. [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md)
+8. [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md)
+9. [Visual style bible](02_VISUAL_DIRECTION/VISUAL_STYLE_BIBLE.md)
+10. [Protagonist character bible](03_CHARACTERS/PROTAGONIST/CHARACTER_BIBLE.md)
+11. [Hoodie continuity](03_CHARACTERS/PROTAGONIST/HOODIE_CONTINUITY.md)
+12. [Mother character bible](03_CHARACTERS/MOTHER/CHARACTER_BIBLE.md)
+13. [Locations and props continuity](04_LOCATIONS_AND_PROPS/CONTINUITY_BIBLE.md)
+14. [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md)
+15. [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md)
+16. [Reference still prompt — REF-A bathroom](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md)
+17. [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md)
+18. [Asset register](07_PRODUCTION/ASSET_REGISTER.md)
+19. [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md)
+20. [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md)
 
 ## Reconstruction principle
 Every final shot must eventually have its own detailed specification, exact prompts used, model/settings record, approved still/video asset references, timing and editing instructions. The asset register must identify where originals and backups live. The EDL must describe the final timeline.
@@ -33,6 +35,8 @@ AI outputs vary across models and versions; exact pixel-level recreation cannot 
 - Preserve approved character, wardrobe, location, prop and music continuity.
 - Use user-authored Audacity markers as the timing authority.
 - Keep model-agnostic master prompts and exact tool-submitted prompts separately.
+- Archive every production-ready prompt in GitHub during the same working session.
+- Save original generated media outside the AI platform and record its exact recovery location.
 - Keep large media in a separately backed-up archive where appropriate; record exact filenames and locations here.
 
 ## Current phase
