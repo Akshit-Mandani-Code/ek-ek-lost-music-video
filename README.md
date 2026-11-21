@@ -1,43 +1,54 @@
 # Ek Ek Lost — AI Music Video Reconstruction Blueprint
 
-A **text-only, tool-independent production blueprint** for recreating this cinematic music video from scratch.
+A text-only, tool-independent blueprint for recreating the visual music video from scratch. The exact song audio master is supplied separately by the user.
 
 ## Start here
-1. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — the master instructions for any future AI or filmmaker.
+
+1. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — master instructions for a future AI or filmmaker. This is the operational entry point.
 2. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md) — objective, constraints and reconstruction contract.
-3. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md) — complete narrative in brief.
-4. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md) — approved, provisional and undecided creative choices.
-5. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md) — current development phase and next steps.
+3. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md) — narrative summary.
+4. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md) — approved, provisional and undecided choices.
+5. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md) — current phase and outstanding work.
 
-## Creative source documents
-- [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md)
-- [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md)
-- [Visual style bible](02_VISUAL_DIRECTION/VISUAL_STYLE_BIBLE.md)
-- [Protagonist character bible](03_CHARACTERS/PROTAGONIST/CHARACTER_BIBLE.md)
-- [Hoodie continuity](03_CHARACTERS/PROTAGONIST/HOODIE_CONTINUITY.md)
-- [Mother character bible](03_CHARACTERS/MOTHER/CHARACTER_BIBLE.md)
-- [Locations and props continuity](04_LOCATIONS_AND_PROPS/CONTINUITY_BIBLE.md)
-- [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md)
+## Canonical creative specifications
 
-## Production documents
-- [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md)
-- [Bathroom reference still prompt](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md)
-- [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md)
-- [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md)
-- [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md)
+These files define what the film is. When details overlap, use the decision log for approval status and the relevant specialist bible for the actual specification.
 
-## Reconstruction contract
-**Required input outside this repository:** the exact song audio master, to be supplied later as an audio file or an accessible download link. The repository already contains the lyrics and manually authored timing markers, but not the audio.
+- [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md) — exact supplied lyrics and section labels.
+- [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md) — user-created Audacity timing anchors.
+- [Visual style bible](02_VISUAL_DIRECTION/VISUAL_STYLE_BIBLE.md) — cinematic language, palette and visual continuity.
+- [Protagonist character bible](03_CHARACTERS/PROTAGONIST/CHARACTER_BIBLE.md) — canonical written identity.
+- [Hoodie continuity](03_CHARACTERS/PROTAGONIST/HOODIE_CONTINUITY.md) — approved garment and hood states.
+- [Mother character bible](03_CHARACTERS/MOTHER/CHARACTER_BIBLE.md) — canonical written identity and performance.
+- [Locations and props continuity](04_LOCATIONS_AND_PROPS/CONTINUITY_BIBLE.md) — home, bathroom, station and story objects.
+- [Master story structure](05_STORYBOARD/MASTER_STORY_STRUCTURE.md) — approved sequence and emotional progression.
 
-**No external visual input is required.** A future AI must generate its own character sheets, location references and prop references using only the written specifications here. It must not require this conversation, CH3, existing photographs, generated images, video clips, platform galleries or an external media archive.
+## Production specifications and tracking
+
+These files explain how to turn the creative specifications into generated assets and an edited film.
+
+- [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md) — text-first character, environment, still and animation workflow.
+- [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md) — required fields for each individual shot.
+- [Bathroom water-splash prompt](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md) — first existing reference-still prompt; it is a text prompt, not a required image.
+- [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md) — master shot index and status.
+- [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md) — definitive record of the final timeline and edit decisions.
+
+## Reconstruction requirements
+
+- The **only required input outside this repository** is the exact song audio master, supplied as a file or accessible download link. The audio is not stored here.
+- **No external visual input is required.** A future AI must create its own character sheets, location references and prop references from the written specifications in this repository.
+- Do not require this conversation, CH3, existing photographs, generated images, video clips, platform galleries or an external media archive.
+- AI outputs are stochastic. Aim to preserve the story, character and environment design, shot progression, emotional intent, timing and edit logic—not pixel-identical results.
 
 ## Repository rules
+
 - Text and source instructions only. Never commit images, video, audio, rendered frames, thumbnails or project binaries.
-- Current-production images may be optional aids for our own session, but no canonical prompt may depend on them.
-- Preserve approved decisions and clearly label provisional or undecided details.
-- Keep prompts model-agnostic; document tool-specific adaptations separately.
-- Use the supplied timing markers as anchors and verify synchronization against the exact audio.
-- AI outputs are stochastic. The goal is a close recreation of story, design, shot progression, emotional intent, timing and editing—not pixel-identical results.
+- Current-production images may be optional aids, but no canonical prompt may depend on them.
+- Preserve approved decisions; clearly label provisional and undecided details.
+- Keep master prompts model-agnostic. Put tool-specific adaptations in separate files.
+- Treat Audacity markers as timing anchors and verify synchronization against the supplied audio.
+- Record generated media locally; GitHub stores the reusable written blueprint only.
 
 ## Current phase
-Pre-production and visual development. The next work is to complete detailed, self-contained character and environment specifications before expanding the shot list.
+
+Pre-production and visual development. The broad story and visual language are established; detailed character, environment, shot and editing specifications still need to be completed.
