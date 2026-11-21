@@ -9,6 +9,7 @@ Photorealistic, grounded, emotionally intimate cinematic drama with restrained s
 - Keep actions simple enough for short image-to-video clips.
 - Avoid excessive slow motion, artificial lens flares, glowing particles and fantasy effects.
 - Prefer naturalistic depth of field and believable skin, fabric, water and reflections.
+- Maintain coherent screen direction and camera geography across shots in the same location.
 
 ## Color and light (provisional)
 - Present-day struggle: cool, muted, low-saturation neutral tones.
@@ -20,9 +21,12 @@ Photorealistic, grounded, emotionally intimate cinematic drama with restrained s
 Compose for a cinematic 16:9 master unless a later platform requirement changes this. Generate at the highest genuinely free usable resolution, then edit/export at 1080p. Do not upscale merely for a number.
 
 ## Continuity rules
-1. Use the approved CH3 portrait as the protagonist's identity reference wherever face is visible.
+1. Written character bibles are the canonical identity source. Generate fresh character sheets from those descriptions; no existing portrait is required.
 2. Keep the same charcoal/washed-black pullover hoodie: no zipper, logo, text or graphic.
 3. Hood is up in bathroom, faceless and present-day station scenes; down naturally behind neck/shoulders in the mother-lap ending.
 4. Keep the same Indian middle-class home design and consistent bathroom/bedroom geography.
-5. Props must be recognizable across inserts: diary, phone, laptop, offer/university papers, medical reports and hackathon award.
-6. Facelessness is a controlled visual metaphor. Do not mutate the skull, hood, body or clothing.
+5. Props must remain recognizable across inserts: diary, phone, laptop, offer/university papers, medical reports and hackathon award.
+6. Facelessness is a controlled visual metaphor. Do not mutate the skull, hood, body or clothing. Achieve the effect through controlled framing, reflection, shadow, editing or compositing—not an uncontrolled AI face morph.
+
+## Reconstruction rule
+Every shot prompt must contain enough relevant character, wardrobe, environment and cinematography detail to work without an attached reference image. Internally generated character/location sheets may be reused within a future generation session, but they are optional working aids rather than external inputs.
