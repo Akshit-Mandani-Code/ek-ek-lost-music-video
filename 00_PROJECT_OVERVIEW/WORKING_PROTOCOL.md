@@ -1,76 +1,67 @@
-# Working Protocol — Chat, Prompts and External Media
+# Working Protocol — Self-Contained Reconstruction
 
-## 1. Two connected workspaces
-- **ChatGPT conversation:** creative discussion, decisions, reviews and iteration.
-- **GitHub repository:** text-only production blueprint and source of truth for decisions, prompts, shot specifications, metadata, continuity and editing instructions.
-- **External media archive:** the only storage location for image, video, audio and other binary production assets. It may be local, cloud-backed or both.
-- Chat history and AI-platform galleries are not reliable long-term archives.
+## 1. The repository is the creative source of truth
+- **ChatGPT conversation:** collaborative development, decisions, prompt reviews and iteration.
+- **GitHub repository:** durable, tool-independent instructions sufficient for a new AI or filmmaker to recreate the visual film without this conversation.
+- **Current-production media archive:** optional convenience for our present work only. It is not part of the future reconstruction contract.
 
-## 2. Absolute GitHub media exclusion
-**Do not commit, upload, attach through Git, or otherwise store any image, video, audio file, thumbnail, rendered frame, project binary or other media asset in this GitHub repository.**
-This applies to original references, generated outputs, rejected variations, approved stills, video clips, song files, exports and DaVinci project files.
-GitHub may contain text-only records about those assets: asset IDs, filenames, formats, dimensions, checksums, generation metadata, prompt IDs, approval status and external archive paths.
-Prompts and documentation are text and should be committed normally.
-If an image is needed as a reference in a future document, use a text asset ID and external path; do not embed or commit the media.
+A future creator must not need our chat history, current AI platform, current generated images, external character references, or an existing media archive to understand and rebuild the film.
 
-## 3. Prompt write-through rule
-Whenever a production-ready prompt is written in the conversation:
-1. Save the complete prompt as text in the relevant repository folder/file during the same working session.
-2. Preserve exact prompt wording; do not silently shorten it.
-3. Give it a prompt ID, version, purpose, status and intended reference inputs.
-4. When revising, retain prior versions that have been used or generated outputs; mark superseded versions rather than erasing production history.
-5. Store the model-agnostic master separately from tool-specific adaptations and record the exact submitted version.
-6. Tell the user which text file was updated and link it.
-Casual brainstorming fragments do not need archiving until they become actionable production instructions.
+## 2. Required input and optional inputs
+- **Required external input:** the exact song audio master. The user will add the audio file or an accessible download link later.
+- **Repository-provided material:** lyrics, manually authored section/lyric markers, story, characters, environments, props, visual style, shot design, prompts, continuity rules and editing blueprint.
+- **Optional only:** any images or clips created during this current production. They may be used as convenience references, but every prompt and design must remain usable without them.
 
-## 4. Reference-image availability protocol
-Never assume a previous image output will be available in a later session or on another platform.
-Before writing a prompt that depends on an earlier image, identify the reference inputs by asset ID and check whether the actual image can be attached in the current tool.
-1. **Original reference available:** attach the exact approved image from the external archive and identify its asset ID in the prompt.
-2. **Approved derivative available:** use only if its asset record approves it for that purpose; record its parent asset.
-3. **Image unavailable, written specification exists:** use the relevant character/location/wardrobe bible and mark the prompt as specification-only.
-4. **Critical identity cannot be reliably described:** pause and ask the user to retrieve or re-upload the original reference. Do not imply that text can preserve an exact face.
+If the audio is not yet supplied, continue visual development using the repository timing markers. Do not claim to have verified musical phrasing, final duration or exact cut points beyond the information recorded here.
 
-## 5. External media archive
-- Save each original generated/supplied media file immediately to the external archive, not only to the generation platform or chat.
-- Keep originals unchanged; create derivatives as separate files.
-- Use stable asset IDs and filenames.
-- Maintain a second copy/backup outside the generation platform.
-- Record the exact external path or cloud folder reference in `07_PRODUCTION/ASSET_REGISTER.md`.
-- GitHub is not a media backup and must never be treated as one.
+## 3. Absolute GitHub media exclusion
+Do not commit or upload images, videos, audio, thumbnails, rendered frames, project binaries or other media assets. Store text specifications, prompts, decisions, timing, metadata and instructions only.
 
-### Recommended local archive layout
-```text
-Ek-Ek-Lost-Assets/
-  00_Original_References/
-  01_Character_References/
-  02_Location_And_Prop_References/
-  03_Generated_Stills/
-  04_Generated_Video/
-  05_Approved_Exports/
-  06_DaVinci_Project_And_Proxies/
-  07_Audio_And_Timing_Exports/
-```
-This is a proposed structure only; it is not claimed to exist until the user creates it.
+## 4. Self-contained visual specification rule
+Every recurring visual element must be described in text with enough specificity to regenerate it:
+- Character age range, facial structure, skin tone, hair, build, clothing, posture, emotional behavior and timeline variations.
+- Locations, architecture, layout, furniture, materials, practical details, lighting and atmosphere.
+- Props, dimensions/style/materials, wear, placement and narrative purpose.
+- Cinematography, composition, lens/look, camera position, movement, focus, palette and texture.
+- Each shot's narrative purpose, exact action, start/end state, image prompt, animation prompt, duration and transition.
 
-## 6. Asset metadata recorded in GitHub
-For each important media asset, record stable ID, exact filename, media type, format, dimensions/resolution, frame rate/duration where applicable, file size and SHA-256 checksum when practical, generation date, tool/model/settings, prompt ID, reference asset IDs/input order, approval state, reviewer notes, parent/derived relationships, exact external archive path and backup status.
-Do not store the media bytes in this repository.
+Never write “use the attached reference image” as a required instruction. If a current-production reference exists, label it **optional current-production reference** and include the complete text specification in the prompt itself.
 
-## 7. Missing-reference categories
-- **Identity-critical:** protagonist face, mother face or another recurring identifiable person. Recover the original wherever possible.
-- **Continuity-important:** hoodie, room, key prop or recurring set. Use saved reference media if possible; otherwise use the written bible and label the output as a recreation.
-- **Mood-only:** lighting, atmosphere or generic composition. A written description may be sufficient.
-Never label a newly generated approximation as the original approved reference.
+## 5. Character and visual bootstrap workflow for any future AI
+A future AI receiving only this repository and the song must:
+1. Read `RECREATE_THIS_VIDEO.md` and all linked canonical documents.
+2. Extract the character and visual specifications.
+3. Generate its own protagonist and mother character sheets from the written character bibles.
+4. Select internally consistent character appearances and reuse those AI-generated sheets within that recreation session wherever the tool supports image references.
+5. Generate location and key prop reference sheets from the written environment/prop bible.
+6. Create shot stills and animate them using the shot prompts.
+7. If its platform cannot preserve image references, repeat the full character and wardrobe descriptions in each prompt and use a consistent seed/model/settings where supported.
+8. Compare every output against the text continuity checklist; do not treat the generated references as new canon unless they satisfy the written design.
 
-## 8. Prompt and asset status vocabulary
-- `DRAFT`: being discussed; not ready to generate.
-- `READY`: prompt is complete and can be used.
+The future AI's internally generated sheets are working aids, not external prerequisites.
+
+## 6. Prompt write-through rule
+Whenever a production-ready prompt is written:
+1. Save the complete prompt as text in the relevant repository file during the same working session.
+2. Preserve exact prompt wording.
+3. Assign prompt ID, version, purpose, status and any optional inputs.
+4. Keep the model-agnostic master separate from tool-specific adaptations.
+5. Retain used/superseded versions rather than silently erasing production history.
+6. Tell the user which file was updated.
+
+Casual brainstorming does not need archiving until it becomes an actionable production instruction.
+
+## 7. Optional current-production asset tracking
+The asset register may record current-production images, clips and audio for convenience. Mark these clearly as optional and never describe them as required inputs for future reconstruction. Do not add external archive paths as dependencies.
+
+## 8. Status vocabulary
+- `DRAFT`: being discussed.
+- `READY`: complete and usable.
 - `GENERATED`: output exists but has not been reviewed.
-- `SELECTED`: preferred candidate, pending final continuity approval.
-- `APPROVED`: accepted as a canonical reference or production asset.
-- `REJECTED`: not to be used, with reason recorded when useful.
+- `SELECTED`: preferred candidate, pending final approval.
+- `APPROVED`: accepted as canonical design or production asset.
+- `REJECTED`: not to be used.
 - `SUPERSEDED`: replaced by a newer version; retain history.
 
 ## 9. Session handoff checklist
-At the end of a meaningful production session, commit new prompts and approved decisions as text, update asset and shot trackers with external media paths, identify which source images must be attached next, state which required references are unavailable, and check documented archive locations before asking the user to regenerate anything.
+Update the decision log and relevant text bibles when a creative decision is approved. Save production-ready prompts in GitHub. Clearly distinguish confirmed decisions from provisional ones. Verify that no prompt requires an image or file outside the repository. Keep the music input requirement explicit until the user adds the audio file or link.
