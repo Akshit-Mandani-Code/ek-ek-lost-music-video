@@ -21,6 +21,9 @@ Only confirmed decisions are marked APPROVED. PROVISIONAL items may change; NOT 
 | Music input | Exact song audio will be supplied later as a file or accessible download link; not stored in GitHub for now | APPROVED |
 | Working title | “THE MAN I USED TO BE” / “Ek Ek Lost” | PROVISIONAL |
 | Diary design | Contemporary A5 hardcover, matte dark cover, elastic band, light pages | PROVISIONAL |
+| Transit-station type | Indian railway station concourse/platform or foot overbridge; exact layout must be selected before reference generation | NOT DECIDED |
+| Hackathon award design | One simple solo-achievement award/certificate/medal; exact appearance not selected | NOT DECIDED |
+| Mother-lap room / seat | Same home interior for adult present and newborn memory; exact sofa/seat and framing to be locked from generated reference | PROVISIONAL |
 | Exact final audio cut | Review remaining audio before choosing | NOT DECIDED |
 
 ## Change protocol
