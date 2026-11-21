@@ -6,11 +6,11 @@ The EDL is the definitive description of the final edit. Update it as editing de
 - Editor: DaVinci Resolve Free (planned)
 - Timeline resolution: 1920×1080 (planned)
 - Frame rate: NOT DECIDED — confirm before editing and keep consistent
-- Audio source: original approved song master; exact file ID/path to be recorded
+- Audio source: exact approved song master, supplied separately; record its filename/version in the local edit notes
 - Final duration: NOT DECIDED — review complete audio before setting final out-point
 
 ## Timeline table
-| Edit order | Shot ID | Timeline in | Timeline out | Source asset ID | Source in | Source out | Speed | Transition in/out | Grade/effects | Notes |
+| Edit order | Shot ID | Timeline in | Timeline out | Source asset ID / filename | Source in | Source out | Speed | Transition in/out | Grade/effects | Notes |
 |---:|---|---:|---:|---|---:|---:|---:|---|---|---|
 | 1 | TBD | 00:00.000 | TBD | TBD | TBD | TBD | 100% | TBD | TBD | Opening bathroom sequence |
 
@@ -19,5 +19,5 @@ The EDL is the definitive description of the final edit. Update it as editing de
 - Record every trim, speed change, freeze frame, reverse, crop/reframe, stabilization, composite, opacity change and transition that materially affects the result.
 - Record track placement for video, audio, titles and overlays when relevant.
 - Keep source audio continuous unless a documented edit is approved.
-- For any effect that cannot be reconstructed from text alone, include a screenshot or reference still and the exact Resolve settings where practical.
-- Save periodic Resolve project backups and export a clean master plus a review copy.
+- Describe effects and Resolve settings in text sufficiently for a fresh editor to rebuild them. Screenshots or local project notes may help the current editor but are optional and must never be required inputs or uploaded to GitHub.
+- Save periodic Resolve project backups and export a clean master plus a review copy outside the repository.
