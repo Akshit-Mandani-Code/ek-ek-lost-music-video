@@ -22,3 +22,5 @@ Only confirmed decisions are marked APPROVED. PROVISIONAL items may change; NOT 
 
 ## Change protocol
 When a decision changes, update this table and the affected continuity/story documents. Keep original master prompts intact; create revised versions or model-specific adaptations separately.
+
+| Repository storage | GitHub is text-only; all media stays in a separate external archive and is never committed | APPROVED |
