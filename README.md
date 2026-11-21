@@ -1,14 +1,14 @@
 # Ek Ek Lost — Cinematic AI Music Video
 
-This repository is the long-term **text-only reconstruction blueprint** for the music video. It preserves the creative and technical instructions needed to rebuild the film. It intentionally does not store any images, videos, audio or other media files.
+This repository is the **tool-independent, text-only reconstruction blueprint** for the music video. It must allow a future AI or filmmaker—with no access to this chat, our current generation platform, or our current images—to recreate a closely similar visual film from scratch.
 
 ## Start here
-1. [Reconstruction standard](00_PROJECT_OVERVIEW/RECONSTRUCTION_STANDARD.md)
-2. [Working protocol](00_PROJECT_OVERVIEW/WORKING_PROTOCOL.md)
-3. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md)
-4. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md)
-5. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md)
-6. [Production status](00_PROJECT_OVERVIEW/PRODUCTION_STATUS.md)
+1. [Recreate this video — master instructions](RECREATE_THIS_VIDEO.md)
+2. [Reconstruction standard](00_PROJECT_OVERVIEW/RECONSTRUCTION_STANDARD.md)
+3. [Working protocol](00_PROJECT_OVERVIEW/WORKING_PROTOCOL.md)
+4. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md)
+5. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md)
+6. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md)
 7. [Canonical lyrics](01_MUSIC_AND_LYRICS/CANONICAL_LYRICS.md)
 8. [Audio section and lyric timings](01_MUSIC_AND_LYRICS/AUDIO_SECTION_TIMINGS.md)
 9. [Visual style bible](02_VISUAL_DIRECTION/VISUAL_STYLE_BIBLE.md)
@@ -20,30 +20,27 @@ This repository is the long-term **text-only reconstruction blueprint** for the 
 15. [AI prompt architecture](06_AI_PROMPTS/PROMPT_ARCHITECTURE.md)
 16. [Reference still prompt — REF-A bathroom](06_AI_PROMPTS/REFERENCE_STILLS/REF-A_BATHROOM_HOOD_UP.md)
 17. [Shot specification template](06_AI_PROMPTS/SHOT_SPECIFICATION_TEMPLATE.md)
-18. [Asset register — metadata only](07_PRODUCTION/ASSET_REGISTER.md)
+18. [Asset register — optional production metadata](07_PRODUCTION/ASSET_REGISTER.md)
 19. [Shot tracker](07_PRODUCTION/SHOT_TRACKER.md)
 20. [Edit decision list](08_EDITING/EDIT_DECISION_LIST.md)
 
-## Two-part production archive
-- **GitHub:** text only — prompts, decisions, continuity bibles, shot specs, metadata, external asset paths and editing instructions.
-- **External media archive:** all actual media — original references, generated stills/videos, audio, approved exports and DaVinci project files. Keep a second backup outside the generation platform.
+## Reconstruction contract
 
-Never commit media files to this repository. The asset register records where external files are stored; it does not host them.
+**Required external input:** the exact song audio master, to be supplied later by the person recreating the video. The audio file or a stable, accessible download link may be provided separately. The repository currently contains the lyrics and manually authored timing markers, but not the audio itself.
 
-## Reconstruction principle
-Every final shot must eventually have its own detailed specification, exact prompts used, model/settings record, approved still/video asset references, timing and editing instructions. The asset register must identify exact external recovery paths.
+**Everything visual must be reconstructable from this repository alone.** No external images, videos, face references, character sheets, location photos, prop photos, prior chat history, or current-production assets may be required. A future AI must generate its own character sheets and visual references from the written specifications before generating shots.
 
-AI outputs vary across models and versions; exact pixel-level recreation cannot be guaranteed. The goal is to preserve the complete creative and technical specification so a future creator can reproduce the closest practical version using any capable tool.
+## Media storage rule
+This repository is text-only. Do not commit images, videos, audio, rendered frames, thumbnails, or project binaries. Current-production media may be stored elsewhere for convenience, but those assets are optional and must never be prerequisites for a fresh reconstruction.
 
 ## Production principles
 - Zero-budget tools and workflows only; verify free-tier limits before depending on a service.
 - Photorealistic, emotionally grounded cinema; avoid random AI montage.
 - Preserve approved character, wardrobe, location, prop and music continuity.
-- Use user-authored Audacity markers as the timing authority.
-- Keep model-agnostic master prompts and exact tool-submitted prompts separately.
+- Use the user-authored Audacity markers as the timing authority; do not invent exact lyric timings.
+- Keep model-agnostic master prompts and tool-specific adaptations separately.
 - Archive every production-ready prompt in GitHub as text during the same working session.
-- Save all original media outside GitHub and outside the AI platform; record exact recovery paths.
-- Do not store images, videos, audio, thumbnails or project binaries in this repository.
+- Different AI models may produce different faces and images. Preserve narrative, design, framing, mood, timing and edit intent rather than promising pixel-identical output.
 
 ## Current phase
-Pre-production / visual development. The next immediate task is to generate and review three consistent reference stills: hooded bathroom water-splash, hooded faceless protagonist, and mother-lap ending.
+Pre-production / visual development. The next immediate visual development task is to establish self-contained character-generation instructions and then develop the three key hoodie states: bathroom water-splash, hooded faceless protagonist, and mother-lap ending.
