@@ -4,7 +4,8 @@ A text-only, tool-independent blueprint for recreating the visual music video fr
 
 ## Start here
 
-1. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — master instructions for a future AI or filmmaker.
+1. **[Next Session Handoff](NEXT_SESSION_HANDOFF.md)** — start image/video production from the next session; no more structural cleanup is needed first.
+2. **[RECREATE THIS VIDEO](RECREATE_THIS_VIDEO.md)** — master instructions for a future AI or filmmaker.
 2. [Project brief](00_PROJECT_OVERVIEW/PROJECT_BRIEF.md) — objective, constraints and reconstruction contract.
 3. [Story synopsis](00_PROJECT_OVERVIEW/STORY_SYNOPSIS.md) — narrative summary.
 4. [Decision log](00_PROJECT_OVERVIEW/DECISION_LOG.md) — approved, provisional and undecided choices.
