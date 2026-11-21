@@ -1,6 +1,6 @@
 # Shot Specification Template
 
-Copy this template for every planned shot. A shot is not ready for production until the essential fields are filled and its prompts are approved.
+Copy this template for every planned shot. A shot is not ready for production until its essential fields are filled and its prompts are approved. **No external reference image is required.** Any reference used by a future AI should be generated from this repository's text during that same recreation session.
 
 ## Identity
 - Shot ID:
@@ -38,18 +38,18 @@ Copy this template for every planned shot. A shot is not ready for production un
 - Color / contrast / atmosphere:
 
 ## Still-image generation
-- Reference assets and order:
-- Model-agnostic master prompt:
+- Optional internally generated reference(s), if available:
+- Model-agnostic master prompt (complete without attachments):
 - Exact prompt submitted:
 - Negative prompt / exclusions:
 - Tool / model / version:
 - Settings / aspect ratio / seed:
-- Output asset IDs:
+- Output asset ID or local filename:
 - Selection notes:
 
 ## Animation generation
-- Starting frame asset ID:
-- Ending frame asset ID (if used):
+- Starting frame description and local asset ID:
+- Ending frame description and local asset ID (if used):
 - Exact animation prompt:
 - Camera movement:
 - Subject movement:
@@ -58,7 +58,7 @@ Copy this template for every planned shot. A shot is not ready for production un
 - Elements that must remain locked:
 - Negative constraints:
 - Tool / model / version / settings:
-- Output asset IDs:
+- Output asset ID or local filename:
 - Selection notes / defects:
 
 ## Edit instructions
@@ -70,7 +70,7 @@ Copy this template for every planned shot. A shot is not ready for production un
 - Color grade:
 - Compositing / overlays / effects:
 - Sound treatment:
-- Resolve notes / screenshots:
+- Resolve notes and exact settings:
 
 ## Approval
 - Character continuity:
@@ -78,5 +78,5 @@ Copy this template for every planned shot. A shot is not ready for production un
 - Location / prop continuity:
 - Visual quality:
 - Music synchronization:
-- Final approved asset:
+- Final selected asset:
 - Approval notes:
