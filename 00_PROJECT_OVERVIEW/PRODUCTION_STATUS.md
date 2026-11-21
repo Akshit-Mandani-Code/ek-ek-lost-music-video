@@ -1,35 +1,53 @@
 # Production Status
 
 ## Current phase
-**Visual development and pre-production.** The song is complete. The broad story, visual language and principal character decisions are established.
+
+**Pre-production documentation complete enough to begin visual reference generation.** The broad story, visual language, principal character decisions, self-contained character-sheet prompts and environment-reference prompts are documented. No image or video assets have been generated or approved yet.
 
 ## Reconstruction objective
-A future AI must be able to recreate the visual universe from this repository's text alone, with the exact song audio supplied separately. No current-production image, external visual reference, chat history or media archive may be required. The operational instructions are in [RECREATE_THIS_VIDEO.md](../RECREATE_THIS_VIDEO.md).
 
-## Completed / approved
-- Core emotional concept and non-linear story framework
-- Photorealistic cinematic visual direction
-- Protagonist hoodie continuity: hood up in present-day concealment scenes; hood down in mother-lap ending
-- Mother character direction and ending beats
-- Station time-lapse motif
-- Audacity section and lyric start markers in the music/timing document
-- Self-contained reconstruction instructions and prompt architecture
-- Text-only story, character, location/prop, shot-tracking and editing documents
-- Music-input policy: exact audio file or accessible download link will be supplied separately later
+A future AI must recreate the visual universe from this repository's text alone, with the exact song audio supplied separately. No current-production image, external visual reference, chat history or media archive is required. Operational instructions are in [RECREATE_THIS_VIDEO.md](../RECREATE_THIS_VIDEO.md).
 
-## Next production steps
-1. Expand protagonist and mother written character bibles into detailed, reproducible visual specifications.
-2. Write self-contained character-sheet generation prompts for both characters.
-3. Expand location and key-prop specifications so they can be regenerated from text alone.
-4. Develop the three key hoodie states: hooded bathroom water-splash, hooded faceless protagonist, and mother-lap ending with hood down.
-5. Develop a detailed shot specification for every shot, including music timing, cinematography, still prompt, animation prompt and edit instructions.
-6. Generate and review assets externally; record shot status and selected outputs in the shot tracker without uploading media to GitHub.
-7. When the exact song file or accessible link is supplied, verify the audio version, full duration and final cut.
+## Completed / approved documentation
+
+- Core emotional concept and non-linear story framework.
+- Photorealistic cinematic visual direction and restrained-surrealism rules.
+- Protagonist identity and approved hoodie continuity.
+- Mother identity, styling direction and final-sequence performance.
+- Locations and recurring prop continuity requirements.
+- Audacity section and lyric-start markers.
+- Text-only reconstruction contract and prompt architecture.
+- Protagonist and mother character-sheet generation prompts.
+- Environment-reference prompts for bathroom, bedroom/study, station, mother-lap room and recurring props.
+- Master story structure and planned shot index.
+- Shot specification template and editing decision-list framework.
+- GitHub remains text-only; generated media stays outside the repository.
+
+## Remaining creative decisions
+
+- Exact transit-station type and layout.
+- Exact diary design and hackathon award design.
+- Exact Resolve frame rate and final color-management approach.
+- Exact final audio out-point after the full supplied track is reviewed.
+- Individual shot timings, prompts, animation settings and final clip selections.
+
+## Next production actions
+
+1. Generate the protagonist character sheet and select one consistent identity.
+2. Generate the mother character sheet and select one consistent identity.
+3. Generate and lock the bathroom and bedroom/study environment references.
+4. Choose the transit-station type before generating its environment reference.
+5. Generate the mother-lap room and essential prop references.
+6. Convert planned shots into complete shot sheets with still and animation prompts.
+7. Generate stills first, review them for continuity, then animate approved stills.
+8. When the exact song file or accessible link is supplied, verify version, duration, musical phrasing and final cut.
 
 ## Known constraints
+
+- Zero budget: use genuinely free features only; clearly distinguish permanent free access from limited credits and paid tiers.
 - ArtCraft AI Studio is paid and has no free credits; do not depend on it.
-- The user has DaVinci Resolve but is a beginner; editing instructions must be explicit and sequential.
+- DaVinci Resolve Free is the intended editor. The user is a beginner; editing instructions must be explicit and sequential.
 - Production PC has 8 GB RAM and a 4 GB GPU; avoid assuming local heavy AI generation or smooth 4K editing.
-- Do not select an exact final audio cut until the complete post-chorus audio has been reviewed.
+- Do not select a final audio cut until the complete track has been reviewed.
 - AI outputs vary across tools and versions; preserve prompts/settings but do not promise pixel-identical recreation.
-- GitHub is text-only. Do not commit images, video, audio or project binaries.
+- Never commit images, video, audio, rendered frames, thumbnails or project binaries to GitHub.
